@@ -11,7 +11,8 @@ html, body {
     overflow-x: hidden !important;
 }
 
-/* div.nav-bar {
+/* Navigation Bar Section */
+div.nav-bar {
     display: flex;
     justify-content: space-between;
     padding: 1rem 6rem;
@@ -24,11 +25,11 @@ div.logo {
     color: #bcc3c7;
 }
 
+
 ul.nav-links {
     display: flex;
     margin: 0;
     padding: 0;
-   
 }
 
 ul li {
@@ -47,46 +48,9 @@ ul li a:hover {
     color: #304353;
     background: #fff;
     padding: 0.5rem;
-} */
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 8vh;
-    background: #304353;
-    padding: 15px;
-   
 }
 
-.logo{
-    font-size: 1.5rem;
-    color: #bcc3c7;
-}
-
-.nav-links{
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-}
-
-.nav-links li{
-    list-style: none;
-    color:  #bcc3c7;
-    font-size: 1.1rem;
-}
-.nav-links a{
-    text-decoration: none;
-    color:  #bcc3c7;
-}
-
-.nav-links a:hover{
-    color: #88949B;
-    background: #fff;
-    padding: 0.5rem;
-    cursor: pointer;
-}
-
+/* Hero Section */
 div.hero-section {
     background: #304353;
     padding: 10rem;
@@ -138,6 +102,16 @@ div.hero-background {
     align-items: center;
 }
 
+
+/* Sub-Hero Session */
+div.hero-background {
+    background: #f0f0f0;
+    padding: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 div.background {
     background: #fff;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
@@ -172,6 +146,7 @@ div.hero-background-pos {
     border-radius: 50%;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
 }
+
 
 div.snapshot-team {
     background: #f0f0f0;
@@ -233,6 +208,7 @@ div.box3 h5 {
     font-size: 1rem;
 }
 
+
 div.circle {
     display: flex;
     margin: 0 auto;
@@ -250,6 +226,8 @@ div.box1 h5 {
     color: #E44C65;
     font-size: 1rem;
 }
+
+/* Gallery Section */
 
 div.gallery-section {
     background: #fff;
@@ -290,6 +268,7 @@ div.img img {
     height: 180px;
 }
 
+/* Footer Section */
 div.footer {
     background: #304353;
     padding: 3rem;
@@ -387,169 +366,4 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
-}
-
-.burger {
-    display: none;
-}
-
-
-.burger div{
-    height: 3px;
-    width: 25px;
-    background-color:  #88949B;
-    margin: 5px;
-    border-radius: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-/* media queries */
-
-
-
-@media screen and (max-width:768px) {
-    div.hero-content-heading{
-        font-size: 1rem;
-        width: 400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-left: -160px;
-        padding: 40px;
-    }
-
-    div.hero-content-heading p{
-        font-size: 0.9rem;
-        padding-top: 20px;
-    }
-
-    div.hero-content-btn{
-        padding-top: 0.8rem;
-        width: 200px;
-        display: flex; 
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-left: -70px;
-        
-    }
-
-    div.hero-content-btn a{
-        font-size: 1rem;
-    }
-}
-
-@media screen and (max-width:768px) {
-    div.hero-background{
-        height: 600px;
-    }
-
-    div.background{
-        width: 500px;
-        height: 350px;
-        position: relative;
-        top:20px;
-        margin: 0 auto;
-    }
-
-    div.hero-background-pos{
-        width: 100px;
-        height: 100px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    div.snapshot-box-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    div.snapshot-team {
-        padding-top: 5rem;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    input[type="text"] {
-        margin-right: 10px;
-        padding: 10px 20px;
-        width: 100%;
-    }
-
-    input[type="email"] {
-        margin-right: 2px;
-        padding: 10px 20px;
-        width: 100%;
-    }
-
-    textarea {
-        width: 100%;
-        height: 150px;
-        padding: 0.5rem;
-        outline: none;
-        border: 1px solid #bcc3c7;
-        background: transparent;
-        color: #f0f0f0;
-    }
-    
-}
-
-@media screen and (max-width: 768px) {
-    html, body{
-        overflow-x: hidden !important;
-    }
-
-    nav{
-        padding: 15px;
-    }
-
-    .nav-links{
-        position: absolute;
-        right: 0px;
-        height: 35vh;
-        width: 100%;
-        top: 8vh;
-        background: #304353;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-
-    }
-   
-
-    .burger{
-        display: block;
-    }
-}
-
-.nav-active{
-    transform: translateX(0%);
-}
-
-@keyframes navLinkFade {
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2{
-    opacity: 0;
-}
-
-.toggle .line3{
-    transform: rotate(45deg)translate(-5px, -6px);
 }
